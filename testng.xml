@@ -1,0 +1,17 @@
+<?xml version ="1.0" encoding ="UTF−8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RPS" verbose="1">
+    <parameter name="PAPER " value="PAPER"/>
+    <parameter name="ROCK" value="ROCK"/>
+    <parameter name="SCISSORS" value="SCISSORS"/>
+
+    <test name="testWinPlay">
+        <classes>
+            <class name="fr.p10.miage.rps.model.RockPaperScissorsTest">
+                <methods>
+                    <include name="testWinPlay"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
